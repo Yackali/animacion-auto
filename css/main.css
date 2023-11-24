@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.cont-carro{
+    width: 80%;
+}
+.cont-carro figure{
+    display: flex;
+    justify-content: flex-start;
+}
+figure img{
+    
+    width: 30%;
+    animation-duration: 2.2s;
+    animation-name: movimiento_carro;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes movimiento_carro{
+    from {
+        margin-left: 0%;
+        width: 30%;
+      }
+    
+      to {
+        margin-left: 100%;
+        width: 30%;
+      }
+}
+
+
+.boton-auto{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.boton-auto:hover {
+    background: black;
+}
